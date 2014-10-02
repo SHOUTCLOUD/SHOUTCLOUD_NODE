@@ -11,5 +11,8 @@
   "devDependencies": {
     "chai": "^1.9.2",
     "mocha": "^1.21.4"
+  },
+  "dependencies": {
+    "httpsync": "0.0.8"
   }
 }
