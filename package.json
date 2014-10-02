@@ -1,0 +1,11 @@
+{
+  "name": "shoutcloud",
+  "version": "1.0.0",
+  "description": "WE PROMISE WEBSCALE ALL CAPS",
+  "main": "SHOUTCLOUD.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Barton <jrbarton@gmail.com> (http://whoisjohnbarton.com/)",
+  "license": "MIT"
+}
