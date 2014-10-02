@@ -6,6 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "HTTP://SHOUTCLOUD.IO",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SHOUTCLOUD/SHOUTCLOUD_NODE.git"
+  },
   "author": "John Barton <jrbarton@gmail.com> (http://whoisjohnbarton.com/)",
   "license": "MIT",
   "devDependencies": {
