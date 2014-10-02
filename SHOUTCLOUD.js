@@ -1,5 +1,5 @@
 
-module.exports = {
+var SHOUTCLOUD = module.exports = {
   UPCASE: function(inputString) {
     var http = require('httpsync');
     var OUTPUT = null;
@@ -28,3 +28,19 @@ module.exports = {
     return OUTPUT;
   }
 };
+
+var ARE_WE_SHOUTING_RIGHT_NOW = false;
+var YE_OLDE_TO_UPPER_CASE = String.prototype.toUpperCase;
+String.prototype.toUpperCase = function() {
+  var INPUT = this;
+  if (ARE_WE_SHOUTING_RIGHT_NOW) {
+    YE_OLDE_TO_UPPER_CASE(INPUT);
+  } else {
+    ARE_WE_SHOUTING_RIGHT_NOW = true;
+    RET_VAL = SHOUTCLOUD.UPCASE(INPUT);
+    ARE_WE_SHOUTING_RIGHT_NOW = false;
+    return RET_VAL;
+  }
+}
+
+
