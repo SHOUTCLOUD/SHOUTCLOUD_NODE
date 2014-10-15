@@ -1,5 +1,5 @@
 var should = require('chai').should(),
-    SHOUTCLOUD = require('../SHOUTCLOUD'),
+    _SHOUTCLOUD = require('../SHOUTCLOUD'),
     UPCASE = SHOUTCLOUD.UPCASE;
 
 describe('#UPCASE', function() {
