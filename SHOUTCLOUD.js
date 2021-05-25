@@ -29,7 +29,7 @@ var YE_OLDE_TO_UPPER_CASE = String.prototype.toUpperCase;
 String.prototype.toUpperCase = function() {
   var INPUT = this;
   if (ARE_WE_SHOUTING_RIGHT_NOW) {
-    YE_OLDE_TO_UPPER_CASE(INPUT);
+    return YE_OLDE_TO_UPPER_CASE.CALL(INPUT);
   } else {
     ARE_WE_SHOUTING_RIGHT_NOW = true;
     RET_VAL = SHOUTCLOUD.UPCASE(INPUT);
