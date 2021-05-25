@@ -1,8 +1,6 @@
 var http = require('httpsync');
 var SHOUTCLOUD = module.exports = {
   UPCASE: function(inputString) {
-    var OUTPUT = null;
-
     var postData = JSON.stringify({
       "INPUT" : inputString
     });
@@ -22,9 +20,7 @@ var SHOUTCLOUD = module.exports = {
     var response = postReq.end();
 
     var resultObject = JSON.parse(response.data);
-    OUTPUT = resultObject["OUTPUT"];
-
-    return OUTPUT;
+    return resultObject["OUTPUT"];
   }
 };
 
